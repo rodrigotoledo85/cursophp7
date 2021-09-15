@@ -1,17 +1,22 @@
 <?php
-
 $nome = "Rodrigo";
 $sobrenome = "Toledo";
-$anoNascimento = 1985;
-$nomeCompleto = $nome . " " . $sobrenome;
+$dataNascimento = "22/08/1985";
+$idade = 35;
 
-echo $nomeCompleto;
-echo "</br>";
-echo $anoNascimento;
+//apagar conteudo de uma variavel
+unset($sobrenome);
 
-unset($nomeCompleto, $anoNascimento);
-
-if(isset($nomeCompleto, $anoNascimento)){
-    echo $nomeCompleto, $anoNascimento;
+//validar se uma variavel esta com um valor definido
+if(isset($sobrenome)){
+    var_dump($nome." " .$sobrenome);
+    echo  "</br>";
+}else{
+    var_dump($nome);
+    echo  "</br>";
 }
+
+var_dump("Data nascimento: ".$dataNascimento);
+echo  "</br>";
+var_dump("Idade: " .$idade. "anos");
 ?>
