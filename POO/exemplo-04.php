@@ -10,4 +10,7 @@ class Endereco{
     $this->cidade = $c;
   }
 }
+
+$meuEndereco = new Endereco("Rua Princesa Isabel", "57", "Abaeté");
+var_dump($meuEndereco);
 ?>
