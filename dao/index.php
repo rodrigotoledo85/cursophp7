@@ -8,10 +8,10 @@ $usuario->loadbyId(3);
 echo $usuario;
 */
 
-/*busca uma lista de usuario 
+/*busca uma lista de usuario */
 $lista = Usuario::getList();
 echo json_encode($lista);
-*/
+
 
 /*busca uma lista de usuarios por parte da descricao do login 
 $search = Usuario::search("jo");
